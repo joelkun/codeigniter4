@@ -6,7 +6,8 @@ class ContactoController extends BaseController
 {
     public function index()
     {
-        $vistas=view('contacto/header').
+        $data =['titulo'=>'Inicio'];
+        $vistas=view('contacto/header',$data).
                  view('contacto/menu').
                  view('contacto/index').
                  view('contacto/footer');
@@ -14,10 +15,14 @@ class ContactoController extends BaseController
         return $vistas;         
     }
 
-    public function catalogo(){
-        echo view('contacto/header');
+    public function catalogo($numeroCataLogo){
+
+        $data =['titulo'=>'catalogo'];
+        $catalogo=['numero'=>$numeroCataLogo];
+
+        echo view('contacto/header',$data);
         echo view('contacto/menu');
-        echo view('contacto/catalogo');
+        echo view('contacto/catalogo',$catalogo);
         echo view('contacto/footer');
     }
 
