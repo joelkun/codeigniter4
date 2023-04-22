@@ -32,6 +32,8 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 //$routes->add('contacto', 'Home::contacto');
 $routes->get('contacto', 'ContactoController::index');
+$routes->get('catalogo', 'ContactoController::catalogo');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
