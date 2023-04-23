@@ -15,4 +15,14 @@ class Home extends BaseController
     public function contacto(){
         return view('contactoPrueba');
     }
+
+    public function formulario(){
+        return view('formulario');
+    }
+
+    public function enviarPost(){
+        $valor1=$_POST['valor1'];
+        $valor2=$_POST['valor2'];
+        echo $valor1+$valor2;
+    }
 }
