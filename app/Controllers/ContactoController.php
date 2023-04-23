@@ -15,14 +15,14 @@ class ContactoController extends BaseController
         return $vistas;         
     }
 
-    public function catalogo($numeroCataLogo){
+    public function catalogo(){
 
         $data =['titulo'=>'catalogo'];
-        $catalogo=['numero'=>$numeroCataLogo];
+        //$catalogo=['numero'=>$numeroCataLogo];
 
         echo view('contacto/header',$data);
         echo view('contacto/menu');
-        echo view('contacto/catalogo',$catalogo);
+        echo view('contacto/catalogo');
         echo view('contacto/footer');
     }
 

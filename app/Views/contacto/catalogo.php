@@ -1,5 +1,6 @@
 <div class="card" style="width: 18rem;">
   <?php 
+  $numero=1;
     if ($numero==0)
       {?>
 
