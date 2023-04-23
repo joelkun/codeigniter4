@@ -25,4 +25,8 @@ class Home extends BaseController
         $valor2=$_POST['valor2'];
         echo $valor1+$valor2;
     }
+
+    public function inicio(){
+        return view('inicio');
+    }
 }

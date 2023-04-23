@@ -31,7 +31,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/formulario', 'Home::formulario');
-$routes->post('envioPost', 'Home::enviarPost');
+$routes->post('/envioPost', 'Home::enviarPost');
+$routes->get('/inicio', 'Home::inicio');
 //$routes->add('contacto', 'Home::contacto');
 $routes->get('/contacto', 'ContactoController::index');
 $routes->get('/catalogo', 'ContactoController::catalogo');
