@@ -33,7 +33,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/formulario', 'Home::formulario');
 $routes->post('/envioPost', 'Home::enviarPost');
 $routes->get('/inicio', 'Home::inicio');
-//$routes->add('contacto', 'Home::contacto');
+//$routes->get('/contactame', 'Home::contacto',['as'=>'contacto']);
 $routes->get('/contacto', 'ContactoController::index');
 $routes->get('/catalogo', 'ContactoController::catalogo');
 
